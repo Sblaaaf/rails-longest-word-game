@@ -17,21 +17,24 @@
   </form>
   <div class="results">
     <h4>Results :</h4>
-    <p><span>Your word : </span><%= @word %><br><span>Time to answer :</span><%= @time %><br> <span>Score :</span><%= @score %></p>
+    <p><span>Your word : </span><strong><%= @word %></strong> <br><span>Time to answer :</span><%= @time %><br> <span>Score :</span><%= @score %></p>
     <p><span>Message : </span>
       <% if @compare %>
         <% if @valid %>
-          <p><strong>Congratulations! 👍</strong> <%= @word %> is a valid English word! 🇬🇧</p>
+          <p><strong>Congratulations! 👍</strong> <%= @word %> is a valid English word!</p>
         <% else %>
           <p>❌<strong><%= @word %></strong> is not a valid English word!❌</p>
         <% end %>
+      <% elsif @word.empty? %>
+        <p>Write something...</p>
       <% else %>
-      <p>❕ Use only this letters : <strong><%= @letters.join(", ") %></strong> ❕</p>
+        <%# <p>👎 You can't build "<strong><%= @word <%#</strong>" with : <strong><%= @letters.join(", ") </strong></p> %>
+        <p>❕Use only this letters : <strong><%= @letters.join(", ") %></strong>❕</p>
       <% end %>
     </p>
   </div>
 </div>
 <div class="new">
-  <%# <%= link_to "< Play again", new_path, class:"left" %>
+  <%# <%= link_to "< Play again", score_path, class:"left" %>
   <%= link_to "New game", new_path, class:"right" %>
 </div>

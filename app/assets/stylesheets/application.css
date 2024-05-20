@@ -37,7 +37,7 @@
 .new {
   width: 90%;
   padding-top: 2em;
-  justify-content: end;
+  justify-content: space-between;
   display: flex;
 }
 h1 {
@@ -58,6 +58,7 @@ h3 {
   flex-direction: column;
 }
 .container form input[type="text"],
+.container form input[type="button"],
 .container form input[type="submit"] {
   margin-bottom: 1em;
   padding: 0.75em;
@@ -83,6 +84,16 @@ h3 {
   color: white;
   font-weight: bold;
 }
+.container form input[type="button"] {
+  color: purple;
+  border: 1px solid purple;
+  cursor: pointer;
+}
+.container form input[type="button"]:hover {
+  background-color: #d95aff;
+  color: white;
+  font-weight: bold;
+}
 .container form input[type="submit"] {
   background-color: #d95aff;
   color: white;
@@ -94,11 +105,10 @@ h3 {
   color: white;
   font-weight: bold;
 }
-.container p {
+/* .container p {
   font-weight: bold;
-}
+} */
 .container p span {
-  font-weight: 400;
   color: lightgrey;
 }
 .letter-grid {
