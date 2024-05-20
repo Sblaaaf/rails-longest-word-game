@@ -13,3 +13,132 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+}
+.container {
+  width: 90%;
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+.new {
+  width: 90%;
+  padding-top: 2em;
+  justify-content: end;
+  display: flex;
+}
+h1 {
+  margin-bottom: 1.5em;
+  color: lightdark;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: 0 2px 4px rgba(174, 0, 255, 0.39);
+}
+h3 {
+  margin-bottom: -1.5em;
+  color: lightgrey;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+.container form input[type="text"],
+.container form input[type="submit"] {
+  margin-bottom: 1em;
+  padding: 0.75em;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container a {
+  justify-content: end;
+  margin-bottom: 1em;
+  padding: 0.75em;
+  font-size: 1em;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #fbeeff;
+  color: #8c2da8 ;
+  border: 1px solid #8c2da8;
+  cursor: pointer;
+}
+.container a:hover {
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+.container form input[type="submit"] {
+  background-color: #d95aff;
+  color: white;
+  border: 1px solid purple;
+  cursor: pointer;
+}
+.container form input[type="submit"]:hover {
+  background-color: #8c2da8;
+  color: white;
+  font-weight: bold;
+}
+.container p {
+  font-weight: bold;
+}
+.container p span {
+  font-weight: 400;
+  color: lightgrey;
+}
+.letter-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(0.5em, 1fr));
+  gap: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.5em;
+  height: 0.5em;
+  padding: 1em;
+  background-color: #fbeeff;
+  color: #8c2da8 ;
+  border: 1px solid #8c2da8;
+  border-radius: 0.3em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+a {
+  /* position: absolute;
+  bottom: 2em;
+  right: 3em; */
+  padding: 0.75em;
+  font-size: 1em;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #fbeeff;
+  color: #8c2da8 ;
+  border: 1px solid #8c2da8;
+  cursor: pointer;
+}
+a:hover {
+  background-color: #8c2da8;
+  color: white;
+  font-weight: bold;
+}
